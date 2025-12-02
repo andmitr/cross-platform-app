@@ -1,4 +1,4 @@
-# JavaScript calculator app 
+# Calculator Application  
 
 ## Table of Contents
 
@@ -162,7 +162,7 @@ The application utilizes the following technologies:
 - `npm run predeploy` - Prepare the application for deployment
 
 ## Live Demo
-Try the calculator here: [Live Demo](https://theevilgrinch.github.io/web-pwa-electron-example/)
+Try the calculator here: [Live Demo](https://andmitr.github.io/web-pwa-electron-app/)
 
 You can install this app as a Progressive Web App (PWA) on supported browsers:
 
@@ -179,7 +179,3 @@ After installation, the app will launch in standalone mode like a native applica
 ## License
 
 MIT Licensed - See [LICENSE](LICENSE) for details.
-
----
-
-⚡ Maintained by [@theEvilGrinch](https://github.com/theEvilGrinch)
