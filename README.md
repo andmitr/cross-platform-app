@@ -1,4 +1,4 @@
-# Simple JavaScript Calculator
+# Calculator Application
 
 ## Description
 This is a modern calculator built using HTML, CSS, and JavaScript. It features an adaptive design that responds to system color scheme preferences and provides a seamless user experience with enhanced accessibility and performance optimizations.
@@ -114,12 +114,8 @@ This is a modern calculator built using HTML, CSS, and JavaScript. It features a
 - `npm run STYLELINT:FIX` - Fix SCSS styling issues
 
 ## Live Demo
-Try the calculator here: [Live Demo](https://theevilgrinch.github.io/web-pwa-electron-example/)
+Try the calculator here: [Live Demo](https://andmitr.github.io/web-pwa-electron-app/)
 
 ## ⚖️ License
 
 MIT Licensed - See [LICENSE](LICENSE) for details.
-
----
-
-⚡ Maintained by [@theEvilGrinch](https://github.com/theEvilGrinch)
