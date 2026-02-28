@@ -1,19 +1,19 @@
 {
   "name": "calculator",
-  "author": "Andrew Dmitriev <h6k2otpy7@mozmail.com>",
-  "version": "1.2.0",
+  "author": "Andrew Dmitriev <andrew.dmitriev.22@gmail.com>",
+  "version": "1.0.0",
   "type": "module",
   "main": "main.electron.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/theEvilGrinch/calculator-web-pwa-electron"
+    "url": "https://github.com/andmitr/cross-platform-app"
   },
-  "license": "MIT | https://github.com/theEvilGrinch/calculator-web-pwa-electron/blob/master/LICENSE",
+  "license": "MIT | https://github.com/andmitr/cross-platform-app/blob/master/LICENSE",
   "bugs": {
-    "url": "https://github.com/theEvilGrinch/calculator-web-pwa-electron/issues",
-    "email": "h6k2otpy7@mozmail.com"
+    "url": "https://github.com/andmitr/cross-platform-app/issues",
+    "email": "andrew.dmitriev.22@gmail.com"
   },
-  "homepage": "https://theevilgrinch.github.io/calculator-web-pwa-electron/",
+  "homepage": "https://andmitr.github.io/cross-platform-app/",
   "description": "This is a modern calculator built using HTML, CSS, and JavaScript. It features an adaptive design that responds to system color scheme preferences and provides a seamless user experience with enhanced functionalities.",
   "scripts": {
     "build": "node build.js",
@@ -29,7 +29,11 @@
     "eslint:fix": "npx eslint \"**/*.js\" --fix"
   },
   "build": {
-    "appId": "com.github.theevilgrinch.calculator-web-pwa-electron-app",
+    "appId": "com.github.andmitr.cross-platform-app",
+    "publish": {
+      "provider": "github",
+      "releaseType": "release"
+    },
     "productName": "calculator",
     "directories": {
       "output": "build"
@@ -55,7 +59,7 @@
       "category": "Utility",
       "synopsis": "Modern calculator",
       "description": "Modern calculator app built with Electron.",
-      "maintainer": "Andrew Dmitriev <h6k2otpy7@mozmail.com>",
+      "maintainer": "Andrew Dmitriev <andrew.dmitriev.22@gmail.com>",
       "target": [
         "AppImage",
         "deb"

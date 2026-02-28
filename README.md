@@ -1,17 +1,14 @@
-# Calculator Application
+# Calculator 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+A professional-grade calculator available as a web app, PWA, and Electron desktop application.
 
-[![Support me on Boosty](https://img.shields.io/badge/Boosty-Support%20me-%23f15f2c?style=for-the-badge)](https://boosty.to/theEvilGrinch/donate)
-[![Donate via card](https://img.shields.io/badge/Donate-%23702ff4?style=for-the-badge)](https://yoomoney.ru/to/410016288289737)
-
-A professional-grade calculator application available in three distinct versions.
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&logo=opensource)](LICENSE)
 
 ## Available Versions
 
 1. **Web Version** (`main` branch) - Standard web-based calculator
 2. **Progressive Web App (PWA)** (`PWA` branch) - Installable web application with offline capabilities
-3. **Desktop Application** (`electron` branch) - Native desktop application built with Electron
+3. **Desktop Application** (`Electron` branch) - Native desktop application built with Electron
 
 ## Table of Contents
 
@@ -23,6 +20,7 @@ A professional-grade calculator application available in three distinct versions
   - [Prerequisites](#prerequisites)
   - [Available Scripts](#available-scripts)
   - [Build and Installation](#build-and-installation)
+- [Sponsorship](#sponsorship)
 - [License](#license)
 
 ## Features
@@ -122,25 +120,8 @@ calculator-web-pwa-electron/
 
 ### Prerequisites
 
-- Node.js v23.4.0
-- npm v11.1.0
-- Development Dependencies:
-  - `@stylistic/stylelint-plugin`: v3.1.2
-  - `concurrently`: v9.1.2
-  - `del`: v8.0.0
-  - `electron`: v31.0.0
-  - `electron-builder`: v26.0.12
-  - `electronmon`: v2.0.3
-  - `esbuild`: v0.25.0
-  - `eslint`: v9.22.0
-  - `fs-extra`: v11.3.0
-  - `globals`: v16.0.0
-  - `html-minifier-terser`: v7.2.0
-  - `png2icons`: v2.0.1
-  - `postcss-scss`: v4.0.9
-  - `sass`: v1.85.1
-  - `sharp`: v0.34.1
-  - `stylelint`: v16.16.0
+- Node.js ^23.4.0
+- npm ^11.1.0
 
 ### Available Scripts
 
@@ -158,16 +139,23 @@ calculator-web-pwa-electron/
 
 ### Build and Installation
 
-To build and install the application, follow these steps based on your operating system:
+#### Pre-built Binaries
 
-#### 1. Clone the Repository
+Ready-to-use builds for **Windows**, **macOS**, and **Linux** are available on the 
+[Releases](https://github.com/andmitr/cross-platform-app/releases) page.
+
+Download the appropriate file for your operating system and follow the [installation instructions](#4-install-the-application) below.
+
+#### Building from Source
+
+##### 1. Clone the Repository
 First, clone the repository to your local machine:
 ```bash
-git clone https://github.com/theEvilGrinch/calculator-web-pwa-electron.git
+git clone https://github.com/andmitr/cross-platform-app.git
 cd calculator-web-pwa-electron
 ```
 
-#### 2. Install Dependencies
+##### 2. Install Dependencies
 Before building, ensure all dependencies are installed:
 ```bash
 npm install
@@ -180,7 +168,7 @@ npm install
 > - On **Linux** (for cross-platform builds targeting Windows):
 >   - `wine` is required to build `.exe` files for Windows.
 
-#### 3. Build the Application
+##### 3. Build the Application
 - **Single-Platform Build**: To build the application for the operating system you are currently using, run:
   ```bash
   npm run build:electron
@@ -198,7 +186,7 @@ npm install
     - `.deb` package for Debian-based distributions.
     - `.AppImage` for universal Linux usage.
 
-#### 4. Install the Application
+##### 4. Install the Application
 After building, follow the instructions below to install the application depending on your operating system:
 
 **Linux (`AppImage` or `.deb`)**
@@ -232,10 +220,19 @@ Extract the `.zip` file and move the application to your `Applications` folder.
 
 **Note:** Replace `<version>` with the actual version number of the generated files.
 
-## Contributing
+## Sponsorship
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+[![Boosty](https://img.shields.io/badge/Boosty-F15F2C?style=for-the-badge&logo=boosty&logoColor=white)![Support](https://img.shields.io/badge/Support%20me-grey?style=for-the-badge)](https://boosty.to/andmitr/don
+
+![Bitcoin](https://img.shields.io/badge/Bitcoin-F7931A?style=flat&logo=bitcoin&logoColor=white&logoSize=auto)
+```
+1CCnwAvJYEoDVGM7vsBg2Q99cF9EHtBVaY
+```
+![Tether](https://img.shields.io/badge/Tether%20(USDT%20ETH)-168363?style=flat&logo=tether&logoColor=white&logoSize=auto)
+```
+0x54f0ccc6b2987de454f69f2814fc9202bcfb74fe
+```
 
 ## License
 
-MIT Licensed - See [LICENSE](LICENSE) for details. 
+MIT Licensed. See [LICENSE](LICENSE) for details.
