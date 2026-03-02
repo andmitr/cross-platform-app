@@ -1,7 +1,26 @@
-# Calculator Application
+# Calculator 
 
-## Description
-This is a modern calculator built using HTML, CSS, and JavaScript. It features an adaptive design that responds to system color scheme preferences and provides a seamless user experience with enhanced accessibility and performance optimizations.
+A professional-grade calculator available as a web app, PWA, and Electron desktop application.
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&logo=opensource)](LICENSE)
+
+## Available Versions
+
+1. **Web Version** (`main` branch) - Standard web-based calculator
+2. **Progressive Web App (PWA)** (`PWA` branch) - Installable web application with offline capabilities
+3. **Desktop Application** (`Electron` branch) - Native desktop application built with Electron
+
+## Table of Contents
+
+- [Features](#features)
+- [Live Demo](#live-demo)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Development](#development)
+  - [Prerequisites](#prerequisites)
+  - [Available Scripts](#available-scripts)
+- [Sponsorship](#sponsorship)
+- [License](#license)
 
 ## Features
 - Supports basic arithmetic operations: addition (+), subtraction (-), multiplication (*), and division (/)
@@ -38,6 +57,16 @@ This is a modern calculator built using HTML, CSS, and JavaScript. It features a
   - Fallback font strategies
   - Efficient CSS reset
   - Modern CSS features utilization
+
+## Live Demo
+
+Try PWA version: [Live Demo](https://andmitr.github.io/cross-platform-app/)
+
+**Screenshots:**
+
+| Light Theme                          | Dark Theme                              |
+|--------------------------------------|-----------------------------------------|
+| ![Light Theme](screenshot-light.png) | ![Dark Theme](screenshot-dark.png)      |
 
 ## Technologies Used
 - HTML5 with semantic markup
@@ -113,9 +142,19 @@ This is a modern calculator built using HTML, CSS, and JavaScript. It features a
 - `npm run CLEAN` - Clean dist directory
 - `npm run STYLELINT:FIX` - Fix SCSS styling issues
 
-## Live Demo
-Try the calculator here: [Live Demo](https://andmitr.github.io/web-pwa-electron-app/)
+## Sponsorship
 
-## ⚖️ License
+[![Boosty](https://img.shields.io/badge/Boosty-F15F2C?style=for-the-badge&logo=boosty&logoColor=white)![Support](https://img.shields.io/badge/Support%20me-grey?style=for-the-badge)](https://boosty.to/andmitr/donate) 
 
-MIT Licensed - See [LICENSE](LICENSE) for details.
+![Bitcoin](https://img.shields.io/badge/Bitcoin-F7931A?style=flat&logo=bitcoin&logoColor=white&logoSize=auto) 
+```
+1CCnwAvJYEoDVGM7vsBg2Q99cF9EHtBVaY
+```
+![Tether](https://img.shields.io/badge/Tether%20(USDT%20ETH)-168363?style=flat&logo=tether&logoColor=white&logoSize=auto) 
+```
+0x54f0ccc6b2987de454f69f2814fc9202bcfb74fe
+```
+
+## License
+
+MIT Licensed. See [LICENSE](LICENSE) for details.
