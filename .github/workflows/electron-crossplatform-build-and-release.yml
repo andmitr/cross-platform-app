@@ -9,17 +9,18 @@ permissions:
   contents: write
 
 jobs:
-  create-release:
-    runs-on: ubuntu-latest
+   release:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: softprops/action-gh-release@v2
+      - name: Create Release
+        uses: softprops/action-gh-release@v3
         with:
-          body: ${{ github.event.head_commit.message }}
           generate_release_notes: true
-
   build:
-    needs: create-release
+    needs: release
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
