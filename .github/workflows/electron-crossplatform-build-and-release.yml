@@ -9,32 +9,24 @@ permissions:
   contents: write
 
 jobs:
-   release:
-    runs-on: ubuntu-24.04
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - name: Create Release
-        uses: softprops/action-gh-release@v3
-        with:
-          generate_release_notes: true
   build:
-    needs: release
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
-          node-version: 25.3.0
+          node-version: 24.x
+
       - uses: Yan-Jobs/action-electron-builder@v1.7.0
         with:
-          github_token: ${{ secrets.github_token }}
-          release: ${{ startsWith(github.ref, 'refs/tags/v') }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          release: true
           max_attempts: 3
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
